@@ -1,21 +1,22 @@
-# Informações do Projeto
-`TÍTULO DO PROJETO`  
+# 🌐 Informações do Projeto
 
 Trabalho Interdisciplinar - Aplicacões Web
 
-`CURSO`
+`Doação para caridade - Grupo 1`
 
-`SEMESTRE`
+`Ciência da Computação - 2021/2`
+<br></br>
 
-## Participantes
+# 👥 Participantes
 
-Os membros do grupo são: 
-- Fulano da Silva
-- Ciclano Albuquerque
+- Bárbara Luciano Araújo
+- Erick Gonzaga Santos
+- Julia Veloso Dias
+- Larissa Valadares Silqueira
+- Pedro Henrique Lopes Costa
+<br></br>
 
-> Inclua a lista dos membros da equipe com seus nomes completos.
-
-# Estrutura do Documento
+# 🧬 Estrutura do Documento
 
 1. [Contexto](1-Contexto.md)
 2. [Especificações do Projeto](2-Especificação.md)
