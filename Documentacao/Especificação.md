@@ -10,6 +10,10 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 |RF-04|O site deve apresentar uma seção com as últimas atualizações (blog) da plataforma.|Média
 |RF-05|O site deve apresentar uma seção com as atualizações e resultados das doações de forma individual para cada instituição.|Alta
 |RF-06|O site deve apresentar estatísticas de doação dos últimos tempos de forma individual para cada instituição.|Baixa
+|RF-07|O site deve permitir ao usuário somente visualizar as informações dinâmicas das instituições e blogs.|Alta|
+|RF-08|O site deve permitir o login dos administradores das instituições com credenciais criadas pelos administradores da plataforma para edição dos dados e estatísticas.|Alta
+|RF-09|O site deve apresentar etiquetas para cada instituição de acordo com sua modalidade de doação (alimentos, financeiro, trabalho voluntário)|Alta
+
 
 <br></br>
 
