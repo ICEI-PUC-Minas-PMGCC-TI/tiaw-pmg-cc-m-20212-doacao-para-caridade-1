@@ -2,7 +2,7 @@
 
 Trabalho Interdisciplinar - Aplicacões Web
 
-`Doação para caridade - Grupo 1`
+Doação para caridade - Grupo 1
 
 `Ciência da Computação - 2021/2`
 <br></br>
