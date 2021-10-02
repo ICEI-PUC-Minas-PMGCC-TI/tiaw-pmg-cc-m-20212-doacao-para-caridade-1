@@ -2,9 +2,10 @@
 
 Este diretório mantém os artefatos do projeto.
 
-* ` `
-    * **Paleta_de_cores.pdf**: Especificação da paleta de cores escolhida para a produção do site, escolhida a partir do Coolors.
-	* **wireframe.png**: Captura de tela da página inicial do software "Quem necessita?" produzido com Visual Studio.
+* `/.`
+    * **colors_pallete.pdf**: Especificação da paleta de cores escolhida para a produção do site, escolhida a partir da plataforma Coolors.
+	* **wireframe.png**: Captura de tela do esboço inicial do site "Quem necessita?", produzido a partir do software low-code Mobirise.
+<br></br>
 
 * `/Artefatos do Design Thinking`
 	* **Matriz_CSD.pdf**: Matriz de alinhamento do projeto construída através do Miro.
