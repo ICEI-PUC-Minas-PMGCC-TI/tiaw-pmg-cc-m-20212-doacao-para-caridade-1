@@ -1,4 +1,3 @@
-# Divulgação: Apresentação do Projeto
+# Divulgação: Apresentação do projeto
 
-Nesta pasta inclua arquivos de slides que foram produzidos para apresentações do projeto e de seus resultados.
-
+Diretório contendo todo o conteúdo de divulgações do projeto em apresentações (slides, imagens).
