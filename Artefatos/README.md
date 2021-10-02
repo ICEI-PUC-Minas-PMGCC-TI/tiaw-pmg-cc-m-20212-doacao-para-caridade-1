@@ -4,7 +4,6 @@ Este diretório mantém os artefatos do projeto.
 
 * `/.`
     * **colors_pallete.pdf**: Especificação da paleta de cores escolhida para a produção do site, escolhida a partir da plataforma Coolors.
-	* **wireframe.png**: Captura de tela do esboço inicial do site "Quem necessita?", produzido a partir do software low-code Mobirise.
 <br></br>
 
 * `/Artefatos do Design Thinking`

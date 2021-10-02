@@ -4,7 +4,7 @@
 |Ambiente|Plataforma|Link de acesso|
 |:--------:|:----------:|:--------------|
 |Repositório de código e documentação|GitHub|https://github.com/ICEI-PUC-Minas-PMGCC-TI/tiaw-pmg-cc-m-20212-doacao-para-caridade-1
-|Projetos de interface|Figma|Link Figma
+|Projetos de interface|Mobirise|https://httpspedroh.github.io/quem-necessita/
 |Gerenciamento de tarefas|Trello|https://trello.com/b/J7TWhfx7/quadro-de-controle-de-tarefas
 
 <br></br>
