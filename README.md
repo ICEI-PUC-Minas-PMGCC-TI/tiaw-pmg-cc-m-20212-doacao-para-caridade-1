@@ -1,6 +1,8 @@
 # Doação para caridade - Grupo 1
 
-Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
+O projeto "Quem necessita?" visa exercer praticidade ao criar um site que exibe os locais que necessitam de doação de maneira dinâmica e eficiente, de forma que quem doa possa encontrar a instituição ideal para sua doação e quem recebe sinta-se acolhido e próximo do seu doador.
+
+Faz parte dos objetivos dos autores elaborar um software que contenha funcionalidades que acompanhem o usuário durante toda a execução da doação, que permitam a interação entre usuários e que integrem ao sistema instituições interessadas nele.
 
 ## 👥 Participantes
 
@@ -15,7 +17,3 @@ Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
 
 * João Carlos Oliveira Caetano
 <br></br>
-
-# Instruções de utilização
-
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
