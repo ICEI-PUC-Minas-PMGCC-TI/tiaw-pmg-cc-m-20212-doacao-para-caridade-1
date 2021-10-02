@@ -18,9 +18,9 @@ O objetivo geral deste trabalho é a criação de um site que mostre quais lugar
 
 Como objetivos específicos, podemos ressaltar:
 
-* Fornecer funcionalidades que permitam que uma doação seja efetuada, desde a escolha do lugar até a entrega do item, de forma segura e confiável;
-* Permitir a interação entre seus usuários, de modo que eles possam complementar doações em conjunto;
-* Permitir que instituições interessadas no projeto ingressem na plataforma para fazer parte da lista de associados.
+* Fornecer funcionalidades que permitam que uma doação seja efetuada, através das informações fornecidas pelas próprias instituições;
+* Permitir a interação entre seus usuários, de modo que eles possam completar doações em conjunto;
+* Permitir que instituições interessadas no projeto ingressem na plataforma para fazer parte do sistema.
 <br></br>
 
 # Justificativa
