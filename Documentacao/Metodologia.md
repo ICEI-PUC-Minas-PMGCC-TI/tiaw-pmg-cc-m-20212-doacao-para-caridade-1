@@ -18,6 +18,13 @@ Para a gestão do código-fonte do software desenvolvido pela equipe e a documen
 ![Basic Git Workflow](https://i.imgur.com/QFZN0sT.png)
 <br></br>
 
+## Projetos de interface
+Para a elaboração do wireframe, fluxo de usuário e protótipo interativo, a equipe utilizou da plataforma de criação de sites low-code **Mobirise**, que permitiu um esboço fiel do resultado almejado.
+
+> O protótipo pode ser acessado a partir do link: https://httpspedroh.github.io/quem-necessita/
+> 
+<br></br>
+
 ## Organização da equipe
 Para centralizar e padronizar o processo de desenvolvimento da aplicação, a nossa equipe utiliza de metodologias eficazes, sendo a escolhida o Scrum.
 
