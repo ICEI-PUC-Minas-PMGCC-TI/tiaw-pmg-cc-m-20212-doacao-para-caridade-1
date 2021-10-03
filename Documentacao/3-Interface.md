@@ -7,7 +7,8 @@ Para a elaboração do wireframe, user-flow e protótipo interativo, a equipe ut
 <br></br>
 ## User-flow
 
-![User-flow](../Artefatos/userflow.jpg)
+![User-flow](../Artefatos/userflow-2.png)
+![User-flow](../Artefatos/userflow-1.png)
 
 <br></br>
 
