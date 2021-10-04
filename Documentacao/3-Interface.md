@@ -5,7 +5,7 @@ Para a elaboração do wireframe e protótipo interativo, a equipe utilizou da p
 Para a elaboração do user-flow, a equipe utilizou da paltaforma **Figma**, que permitiu o design seguindo precisamente o protótipo interativo.
 
 > O protótipo pode ser acessado a partir do link: https://httpspedroh.github.io/quem-necessita/
-> 
+
 <br></br>
 ## User-flow
 
