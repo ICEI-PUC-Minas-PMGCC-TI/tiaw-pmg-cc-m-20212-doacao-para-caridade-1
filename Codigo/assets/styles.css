@@ -7,10 +7,12 @@
     box-sizing: border-box;
 }
 
-.sec_fixed { height: 80px; }
+.sec_fixed {
+    height: 80px;
+}
 
 .sec_instituicoes {
-    background-color:#333333;
+    background-color: #333333;
     padding: 40px 0px;
 }
 
@@ -21,10 +23,22 @@ a:hover {
     text-decoration: none;
 }
 
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+
 /*-------------------------------------------- Header --------------------------------------------*/
 
-header li { color: white; }
-header a { font-weight: bold; }
+header li {
+    color: white;
+}
+
+header a {
+    font-weight: bold;
+}
 
 .header_logo {
     text-align: center;
@@ -44,7 +58,13 @@ header a { font-weight: bold; }
 
 .header_loginBtn {
     margin-left: 15px;
-    background-color: #2176FF; 
+    background-color: #2176FF;
+}
+
+.header_loginBtn:hover {
+    background-color: #333333;
+    transition: .2s;
+    color: #21D19F;
 }
 
 @media screen and (max-width: 400px) {
@@ -54,113 +74,110 @@ header a { font-weight: bold; }
     }
 }
 
+
 /*-------------------------------------------- Menu Mobile --------------------------------------------*/
 
 nav {
-	background: #21D19F;
-	height: 80px;
-	width: 100%;
-	position: fixed;
+    background: #21D19F;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
 }
 
 nav ul {
-	float: right;
-	margin-right: 20px;
+    float: right;
+    margin-right: 20px;
 }
 
 nav ul li {
-	display: inline-block;
-	line-height: 80px;
-	margin: 0px;
+    display: inline-block;
+    line-height: 80px;
+    margin: 0px;
 }
 
 nav ul li a {
-	font-size: 17px;
+    font-size: 17px;
     font-family: 'Jost', sans-serif;
-	padding: 13px 20px;
-	border-radius: 50px;
+    padding: 13px 20px;
+    border-radius: 50px;
 }
 
-nav ul li a i { padding-right: 10px; }
+nav ul li a i {
+    padding-right: 10px;
+}
 
 .checkbtn {
-	font-size: 30px;
-	color: white;
-	float: right;
-	line-height: 80px;
-	margin-right: 40px;
-	cursor: pointer;
-	display: none;
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
 }
 
-#check { display: none; }
+#check {
+    display: none;
+}
 
 @media (max-width: 964px) {
     label.logo {
-		font-size: 30px;
-		padding-left: 50px;
-	}
-
-	.checkbtn { display: block; }
-	
-	ul {
-		position: fixed;
-		width: 100%;
-		height: 100vh;
-		background: #00000065;
-		top: 80px;
-		left: -100%;
-		text-align: center;
-		transition: all .5s;
-		padding: 10px 0px 0px 0px !important;
-	}
-
-	nav ul li {
-		display: block;
-		padding: 20px 0px;
-		line-height: 30px;
-	}
-
-    .header_loginBtn li { padding-bottom: 30px; }
-
-	nav ul li a { font-size: 20px; }
-
-	#check:checked ~ ul { left: 0; }
-
-    /* #check:checked ~ label i:nth-child(2) { display: block; }
-    #check:checked ~ label i:first-child { display: none; }
-    #check:not(:checked) ~ label i:first-child { display: block; }
-    #check:not(:checked) ~ label i:nth-child(2) { display: none; } */
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #00000065;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        padding: 10px 0px 0px 0px !important;
+    }
+    nav ul li {
+        display: block;
+        padding: 20px 0px;
+        line-height: 30px;
+    }
+    .header_loginBtn li {
+        padding-bottom: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
 }
+
 
 /*-------------------------------------------- Carrossel --------------------------------------------*/
 
-.sec_campanhas { background-color: rgb(117, 40, 40) }
+.sec_campanhas {
+    background-color: rgb(117, 40, 40)
+}
 
-.camp_general {
+.camp_general img {
     height: 500px;
-    padding: 0px 10px;
+    width: 100vw;
+    object-fit: cover;
+    object-position: 100% 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.camp_arrow i {
-    font-size: 30px;
-    padding: 20px;
-    border-radius: 1000px;
-    background-color: #333333;
-    color: #21D19F;
-}
-
-@media screen and (max-width: 767px) 
-{
-    .camp_arrow { padding-bottom: 20px; }
-    .camp_general { padding: 0px 40px; }
-    .camp_arrow i { font-size: 15px; }
-}
 
 /*-------------------------------------------- Como doar --------------------------------------------*/
 
 .sec_comoDoar {
-    background-color:#21D19F;
+    background-color: #21D19F;
     padding: 40px 0px;
 }
 
@@ -172,7 +189,9 @@ nav ul li a i { padding-right: 10px; }
     text-align: center;
 }
 
-.cd_steps { padding: 50px 80px 0px 80px; }
+.cd_steps {
+    padding: 50px 80px 0px 80px;
+}
 
 .cd_circle {
     padding: 10px 27px 10px 27px;
@@ -184,7 +203,9 @@ nav ul li a i { padding-right: 10px; }
     color: white;
 }
 
-.cd_step { padding: 0px 50px; }
+.cd_step {
+    padding: 0px 50px;
+}
 
 .cd_steps h6 {
     padding-top: 25px;
@@ -193,17 +214,27 @@ nav ul li a i { padding-right: 10px; }
 }
 
 @media screen and (max-width: 991px) {
-    .cd_step { padding: 30px 0px 0px 0px; }
-    .cd_steps { padding: 20px 80px; }
+    .cd_step {
+        padding: 30px 0px 0px 0px;
+    }
+    .cd_steps {
+        padding: 20px 80px;
+    }
 }
+
 
 /*-------------------------------------------- Instituições --------------------------------------------*/
 
-.inst_general { padding: 40px 80px 15px 80px; }
+.carousel {
+    text-align: center;
+}
 
-.inst_arrow {
-    font-size: 30px;
-    color: #21D19F;
+.inst_general {
+    padding: 40px 80px 0px 80px;
+}
+
+.inst_general img {
+    border-radius: 1000px;
 }
 
 .inst_title {
@@ -213,8 +244,6 @@ nav ul li a i { padding-right: 10px; }
     font-weight: bold;
     text-align: center;
 }
-
-.inst_info img { border-radius: 1000px; }
 
 .inst_info h5 {
     padding-top: 20px;
@@ -233,22 +262,39 @@ nav ul li a i { padding-right: 10px; }
 
 .inst_saibaMais {
     color: white;
-    padding: 10px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
     background-color: #21D19F;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    border-radius: 5px;
 }
 
 .inst_saibaMais i {
-    margin-top: 40px;
     padding-right: 10px;
 }
 
-@media screen and (max-width: 991px) {
-    .inst_general { padding: 40px 20px; }
-    .inst_info h6 { font-size: 15px; }
+.inst_saibaMais:hover {
+    background-color: #333333;
+    color: #21D19F;
 }
+
+@media screen and (max-width: 991px) {
+    .inst_general {
+        padding: 0px;
+    }
+    .inst_info h6 {
+        font-size: 15px;
+    }
+    .inst_info h5 {
+        font-size: 20px;
+    }
+    .inst_title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+}
+
 
 /*-------------------------------------------- Sobre nós --------------------------------------------*/
 
@@ -285,12 +331,17 @@ nav ul li a i { padding-right: 10px; }
         text-align: center;
         padding-top: 30px;
     }
-
-    .sec_sobreNos h6 { text-align: justify; }
-    .sec_sobreNos { padding: 40px 20px; }
+    .sec_sobreNos h6 {
+        text-align: justify;
+    }
+    .sec_sobreNos {
+        padding: 40px 20px;
+    }
 }
 
+
 /*------------------------------------ instituicao.html ------------------------------------------*/
+
 
 /*--------------------------------------- Informações --------------------------------------------*/
 
@@ -353,9 +404,14 @@ nav ul li a i { padding-right: 10px; }
     /* display: none; */
 }
 
-.infoInst_editar i { padding-right: 10px; }
+.infoInst_editar i {
+    padding-right: 10px;
+}
 
-.blog_ntc_editar i, .blog_ntc_excluir i { padding-right: 10px; }
+.blog_ntc_editar i,
+.blog_ntc_excluir i {
+    padding-right: 10px;
+}
 
 .blog_ntc_editar {
     padding: 5px 10px;
@@ -373,7 +429,8 @@ nav ul li a i { padding-right: 10px; }
 .blog_ntc_excluir {
     padding: 5px 10px;
     margin: 15px 10px 0px 0px;
-    background-color: rgb(141, 14, 14);;
+    background-color: rgb(141, 14, 14);
+    ;
     float: left;
     border-radius: 5px;
     color: white !important;
@@ -389,15 +446,18 @@ nav ul li a i { padding-right: 10px; }
     }
 }
 
+
 /*--------------------------------------- Mapa --------------------------------------------*/
 
 .google-map {
     height: 30rem;
 }
+
 .google-map iframe {
     height: 100%;
     width: 100%;
 }
+
 .google-map [data-state-details] {
     color: #6b6763;
     height: 1.5em;
@@ -409,12 +469,15 @@ nav ul li a i { padding-right: 10px; }
     top: 50%;
     width: 100%;
 }
+
 .google-map[data-state] {
     background: #e9e5dc;
 }
+
 .google-map[data-state="loading"] [data-state-details] {
     display: none;
 }
+
 
 /*--------------------------------------- Blog --------------------------------------------*/
 
@@ -442,7 +505,7 @@ nav ul li a i { padding-right: 10px; }
     padding-top: 20px;
     font-size: 20px;
     color: #21D19F;
-    text-align:start;
+    text-align: start;
     font-weight: bold;
     font-family: 'Jost', sans-serif;
 }
@@ -476,13 +539,15 @@ nav ul li a i { padding-right: 10px; }
 
 @media screen and (max-width: 575px) {
     .blog_noticiaData {
-        float:none;
+        float: none;
         width: 172px;
         justify-content: space-between;
     }
 }
 
+
 /*------------------------------------ login.html ------------------------------------------*/
+
 
 /*--------------------------------------- Login --------------------------------------------*/
 
@@ -535,7 +600,7 @@ nav ul li a i { padding-right: 10px; }
     border-color: white;
 }
 
-.login_btn:hover{
+.login_btn:hover {
     background-color: inherit;
     color: #21D19F;
     border-color: #21D19F;
@@ -548,37 +613,46 @@ nav ul li a i { padding-right: 10px; }
     font-family: 'Roboto', sans-serif;
 }
 
-.login_dataCol p a { color: #21D19F; }
+.login_dataCol p a {
+    color: #21D19F;
+}
 
 @media screen and (min-width: 768px) {
     .login_imgCol img {
         width: 150px;
         height: 150px;
     }
-
-    .login_imgCol { 
-        border-radius: 10px 0px 0px 10px; 
+    .login_imgCol {
+        border-radius: 10px 0px 0px 10px;
         padding: 65px 0px;
     }
-    .login_dataCol { 
+    .login_dataCol {
         border-radius: 0px 10px 10px 0px;
         padding: 50px;
     }
-
-    .sec_login { padding: 100px 50px; }
+    .sec_login {
+        padding: 100px 50px;
+    }
 }
 
 @media screen and (min-width: 992px) {
-    .sec_login { padding: 100px; }
+    .sec_login {
+        padding: 100px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
-    .sec_login { padding: 100px 300px; }
+    .sec_login {
+        padding: 100px 300px;
+    }
 }
 
 @media screen and (min-width: 1700px) {
-    .sec_login { padding: 100px 500px; }
+    .sec_login {
+        padding: 100px 500px;
+    }
 }
+
 
 /*-------------------------------------------- Footer --------------------------------------------*/
 
@@ -587,12 +661,23 @@ nav ul li a i { padding-right: 10px; }
     background-color: #333333;
 }
 
-.footer a {
-    color: #21D19F;
-    font-size: 17px;
-}
-
 .footer p {
     margin: 0px;
     color: white;
+}
+
+.footer img {
+    max-width: 80%;
+    text-align: right;
+}
+
+.footer_row {
+    padding: 0px 20px;
+}
+
+@media (max-width: 768px) {
+    .footer img {
+        padding-top: 20px;
+        max-width: 50%;
+    }
 }
