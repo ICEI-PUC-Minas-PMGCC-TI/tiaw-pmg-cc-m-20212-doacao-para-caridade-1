@@ -159,10 +159,6 @@ nav ul li a i {
 
 /*-------------------------------------------- Carrossel --------------------------------------------*/
 
-.sec_campanhas {
-    background-color: rgb(117, 40, 40)
-}
-
 .camp_general img {
     height: 500px;
     width: 100vw;
@@ -171,6 +167,36 @@ nav ul li a i {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.camp_controle {
+    padding-bottom: 10px;
+    background-color: #21D19F;
+}
+
+.camp_controle i {
+    padding-right: 10px;
+}
+
+.camp_controle button {
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.btn_campAdd {
+    background-color: #2176FF
+}
+
+.btn_campAdd:hover,
+.btn_campExcluir:hover {
+    background-color: #333333;
+    color: #21D19F;
+}
+
+.btn_campExcluir {
+    background-color: rgb(141, 14, 14);
 }
 
 
