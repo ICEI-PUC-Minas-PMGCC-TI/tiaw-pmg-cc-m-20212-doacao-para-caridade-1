@@ -185,18 +185,17 @@ nav ul li a i {
     color: white;
 }
 
-.btn_campAdd {
-    background-color: #2176FF
+.btn_campAdd,
+.btn_campExcluir {
+    background-color: #2176FF;
+    opacity: 80%;
 }
 
 .btn_campAdd:hover,
 .btn_campExcluir:hover {
     background-color: #333333;
     color: #21D19F;
-}
-
-.btn_campExcluir {
-    background-color: rgb(141, 14, 14);
+    opacity: 100%;
 }
 
 
@@ -430,6 +429,11 @@ nav ul li a i {
     /* display: none; */
 }
 
+.infoInst_editar:hover {
+    background-color: #333333;
+    color: #21D19F;
+}
+
 .infoInst_editar i {
     padding-right: 10px;
 }
@@ -439,31 +443,24 @@ nav ul li a i {
     padding-right: 10px;
 }
 
-.blog_ntc_editar {
+.blog_ntc_editar,
+.blog_ntc_excluir {
     padding: 5px 10px;
     margin: 15px 10px 0px 0px;
     background-color: #2176FF;
     float: left;
     border-radius: 5px;
-    color: white !important;
+    color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 15px;
     /* display: none; */
 }
 
-.blog_ntc_excluir {
-    padding: 5px 10px;
-    margin: 15px 10px 0px 0px;
-    background-color: rgb(141, 14, 14);
-    ;
-    float: left;
-    border-radius: 5px;
-    color: white !important;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size: 15px;
-    /* display: none; */
+.blog_ntc_editar:hover,
+.blog_ntc_excluir:hover {
+    background-color: #333333;
+    color: #21D19F;
 }
 
 @media screen and (max-width: 1199px) {
