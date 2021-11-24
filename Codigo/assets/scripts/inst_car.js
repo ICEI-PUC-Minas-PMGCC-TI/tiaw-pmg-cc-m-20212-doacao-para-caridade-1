@@ -102,13 +102,14 @@ var db_fakeInstituicoes = {
 };
 
 var divCarrossel = document.getElementById('inst_carrossel');
-var instituicoes = JSON.parse(localStorage.getItem("usuarios"));
+var instituicoes;
 
 // ----------------------------------------------------------------------------------------------------------------------------------- //
 
 onload = () => {
 
     localStorage.setItem("usuarios", JSON.stringify(db_fakeInstituicoes.usuarios));
+    instituicoes = JSON.parse(localStorage.getItem("usuarios"));
 
     carregarInst();
 };
@@ -116,11 +117,13 @@ onload = () => {
 // ----------------------------------------------------------------------------------------------------------------------------------- //
 
 function setClickInst(id) {
+
     sessionStorage.setItem('id_clickInst', id);
     location.href = "instituicao.html";
 }
 
 function addInst(dados) {
+
     instituicoes.push(dados);
     localStorage.setItem("usuarios", JSON.stringify(instituicoes));
 
@@ -128,6 +131,7 @@ function addInst(dados) {
 }
 
 function carregarInst() {
+
     let texto = '';
 
     // Montar um bloco de informações para cada instituição
