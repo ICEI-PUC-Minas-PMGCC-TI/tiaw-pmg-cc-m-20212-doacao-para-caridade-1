@@ -33,7 +33,7 @@
             <label for="check" class="checkbtn">
                 <i class="fa fa-bars"></i>
             </label>
-            <label class="header_logo"><img src="assets/images/logo.png" alt="Logo"><span class="header_logoText">Quem necessita?</span></label>
+            <label class="header_logo"><img src="assets/images/logo.png" alt="Logo" width="50" height="50"><span class="header_logoText">Quem necessita?</span></label>
             <ul>
                 <li><a href="/"><i class="fas fa-home"></i>Página inicial</a></li>
                 <li><a href="/#Instituições"><i class="far fa-smile-wink"></i>Instituições</a></li>
@@ -59,12 +59,25 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form>
+                        <form id="form_register">
                             <div class="form-row">
                                 <div class="col-md-12 mb-3">
                                     <input type="text" class="form-control" id="reg_name" placeholder="Nome da instituição" required>
                                 </div>
                             </div>
+
+                            <div class="form-row">
+                                <div class="col-md-12 mb-3">
+                                    <label for="reg_logo">Logo <small>(Recomendado: 500x500)</small></label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend2"><i class="far fa-image"></i></span>
+                                        </div>
+                                        <input type="file" class="form-control" id="reg_logo" placeholder="Logo" aria-describedby="inputGroupPrepend2" required>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="form-row">
                                 <div class="col-md-6 mb-3">
                                     <label id="label_user" for="reg_user">Usuário</label>
@@ -132,7 +145,7 @@
                             <div class="form-row">
                                 <div class="col-md-12 mb-3">
                                     <label for="reg_descricao">Descrição da instituição</label>
-                                    <input type="text" class="form-control input-lg" id="reg_descricao" aria-describedby="inputGroupPrepend2" required>
+                                    <textarea class="form-control" id="reg_descricao" rows="3"></textarea>
                                 </div>
                             </div>
                             
@@ -153,7 +166,7 @@
         <section class="sec_login">
             <div class="container-fluid">
                 <div class="login_general row rounded shadow">
-                    <div class="login_imgCol text-center align-self-center col-12 col-md-5"><img src="assets/images/logo_gg.png" alt="Logo GG" height="100" width="100"><br><h5>Bem-vindo(a)!</h5></div>
+                    <div class="login_imgCol text-center align-self-center col-12 col-md-5"><img src="assets/images/logo.png" alt="Logo GG" height="100" width="100"><br><h5>Bem-vindo(a)!</h5></div>
                     <div class="login_dataCol align-self-center col-12 col-md-7">
                         <h5 class="text-center">LOGIN</h5>
                         <form>

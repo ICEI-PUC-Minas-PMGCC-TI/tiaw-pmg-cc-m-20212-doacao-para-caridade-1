@@ -181,7 +181,7 @@ nav ul li a i {
 }
 
 .camp_controle {
-    padding-bottom: 10px;
+    padding-top: 20px;
     background-color: #21D19F;
 }
 
@@ -437,7 +437,6 @@ nav ul li a i {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 15px;
-    /* display: none; */
 }
 
 .infoInst_editar:hover {
@@ -465,7 +464,6 @@ nav ul li a i {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 15px;
-    /* display: none; */
 }
 
 .blog_ntc_editar:hover,
@@ -491,27 +489,6 @@ nav ul li a i {
     height: 100%;
     width: 100%;
 }
-
-.google-map [data-state-details] {
-    color: #6b6763;
-    height: 1.5em;
-    margin-top: -0.75em;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    width: 100%;
-}
-
-.google-map[data-state] {
-    background: #e9e5dc;
-}
-
-.google-map[data-state="loading"] [data-state-details] {
-    display: none;
-}
-
 
 /*--------------------------------------- Blog --------------------------------------------*/
 
@@ -563,6 +540,9 @@ nav ul li a i {
     font-weight: bold;
     float: right;
     padding-bottom: 10px;
+    float: none;
+    width: 172px;
+    justify-content: space-between;
 }
 
 @media screen and (min-width: 1200px) {
@@ -571,13 +551,6 @@ nav ul li a i {
     }
 }
 
-@media screen and (max-width: 575px) {
-    .blog_noticiaData {
-        float: none;
-        width: 172px;
-        justify-content: space-between;
-    }
-}
 
 
 /*------------------------------------ login.html ------------------------------------------*/

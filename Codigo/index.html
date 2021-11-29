@@ -33,7 +33,7 @@
             <label for="check" class="checkbtn">
                 <i class="fa fa-bars"></i>
             </label>
-            <label class="header_logo"><img src="assets/images/logo.png" alt="Logo"><span class="header_logoText">Quem necessita?</span></label>
+            <label class="header_logo"><img src="assets/images/logo.png" alt="Logo" width="50" height="50"><span class="header_logoText">Quem necessita?</span></label>
             <ul>
                 <li><a href="/"><i class="fas fa-home"></i>Página inicial</a></li>
                 <li><a href="/#Instituições"><i class="far fa-smile-wink"></i>Instituições</a></li>
@@ -47,13 +47,39 @@
 
     <main>
 
+        <div class="modal fade" id="addImgModal" tabindex="-1" role="dialog" aria-labelledby="addImgModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addImgModalLabel">Adicionar imagem</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Adicionar">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="form_addImg">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="addImg_alt" placeholder="Texto alternativo" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="addImg_file">Imagem <small>(Recomendado: 1900x600)</small></label>
+                                <input type="file" class="form-control" id="addImg_file" required>
+                            </div>
+
+                            <button id="btn_addImg" class="btn btn_green" type="submit" onclick="addImg()">Adicionar imagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------------------------------------------------->
+
         <section class="sec_fixed"></section>
 
         <!------------------------------------------------------------------->
 
         <section id="sid_campanhas" class="sec_campanhas">
-            <div id="btns_control"></div>
-
             <div class="camp_general">
                 <div id="campanhas" class="carousel slide" data-ride="carousel">
                     <ol id="car_indicator" class="carousel-indicators">
@@ -72,6 +98,7 @@
                     </a>
                 </div>
             </div>
+            <div id="btns_control"></div>
         </section>
 
         <!------------------------------------------------------------------->
@@ -85,17 +112,17 @@
                 <div class="cd_steps row">
                     <span class="cd_step col-12 col-lg-4 col-xl-4 text-center">
                         <span class="cd_circle">1</span>
-                    <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt dolorem cumque in asperiores ipsum natus adipisci. Unde at totam deserunt!</h6>
+                    <h6>Identifique a instituição desejada através da nossa plataforma, visando o propósito, categoria de doação e também a sua localização.</h6>
                     </span>
 
                     <span class="cd_step col-12 col-lg-4 col-xl-4 text-center">
                         <span class="cd_circle">2</span>
-                    <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt dolorem cumque in asperiores ipsum natus adipisci. Unde at totam deserunt!</h6>
+                    <h6>Utilizando as informações oferecidas pela plataforma na página de instituição, entre em contato com a entidade desejada.</h6>
                     </span>
 
                     <span class="cd_step col-12 col-lg-4 col-xl-4 text-center">
                         <span class="cd_circle">3</span>
-                    <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt dolorem cumque in asperiores ipsum natus adipisci. Unde at totam deserunt!</h6>
+                    <h6>Após realizada a doação através dos métodos disponibilizados pela entidade, veja os resultados da sua doação no blog da página da instituição!</h6>
                     </span>
                 </div>
             </div>
@@ -132,15 +159,13 @@
         <section class="sec_sobreNos" id="Sobre_nós">
             <div class="container-fluid">
                 <div class="sobre_general row">
-                    <span class="col-12 col-lg-3 align-self-center text-center"><img src="assets/images/logo_gg.png" alt="Logo GG" height="200" width="200"></span>
+                    <span class="col-12 col-lg-3 align-self-center text-center"><img src="assets/images/logo.png" alt="Logo GG" height="200" width="200"></span>
                     <span class="col-12 col-lg-9">
                         <h5>Sobre nós</h5>
-                        <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo dolorem inventore iste laudantium. Tenetur nam corrupti, nobis aliquid non mollitia officia distinctio, ullam atque incidunt dignissimos sint fugit consectetur dolor ut doloribus asperiores fuga. Vitae maiores, nihil repudiandae dolores in praesentium odit eius nemo, facilis tenetur unde sapiente ducimus debitis?
-                        <br><br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla fugit illo sit deserunt aliquam numquam aspernatur, quo exercitationem. Hic quaerat itaque ex consequuntur fugiat quo ipsam illo, quia, libero corporis facilis tempora, fuga velit quod deleniti in provident magni dignissimos! Nobis, praesentium placeat magni molestiae quisquam quaerat nesciunt a vero?</h6>
+                        <h6>"Quem necessita?" é uma plataforma que visa auxiliar doadores a encontrar a instituição ideal para suas doações, assim como permitir que as instituições que participam do sistema ganhem mais visibilidade. Nós, desenvolvedores e administradores, acreditamos que por meios corretos e com a disposição e a força de vontade dos envolvidos, famílias em situação de vulnerabilidade social podem ser ajudadas, de acordo com sua necessidade, e assim, enfrentar mais uma batalha em suas vidas.<br><br>O projeto foi desenvolvido pelos alunos Barbara Luciano Araujo, Erick Gonzaga Santos, Julia Veloso Dias, Larissa Valadares Silqueira e Pedro Henrique Lopes Costa, ingressos no curso de Ciência da Computação da Pontifícia Universidade Católica de Minas Gerais - Campus Coração Eucarístico, como forma de conclusão da disciplina Trabalho Interdisciplinar de Aplicações Web do 1º período do curso.</h6>
                        
-                        <a class="sobre_social" href="#"><i class="fab fa-instagram"></i></a>
-                        <a class="sobre_social" href="https://icei.pucminas.br"><i class="fas fa-globe"></i></a>
+                        <a class="sobre_social" href="https://github.com/ICEI-PUC-Minas-PMGCC-TI/tiaw-pmg-cc-m-20212-doacao-para-caridade-1" target="_blank"><i class="fab fa-github"></i></a>
+                        <a class="sobre_social" href="https://icei.pucminas.br" target="_blank"><i class="fas fa-globe"></i></a>
                     </span>
                 </div>
             </div>

@@ -14,7 +14,7 @@ function loadImgs()
     if(getUserLogged() == -1) divButtonsControl.style.display = 'none';
     else divButtonsControl.innerHTML = `<div id="btns_control" class="camp_controle container-fluid">
         <div class="row">
-            <span class="col-6 text-right"><button class="btn btn_campAdd"><i class="fas fa-plus"></i>Adicionar imagem</button></span>
+            <span class="col-6 text-right"><button data-toggle="modal" data-target="#addImgModal" class="btn btn_campAdd"><i class="fas fa-plus"></i>Adicionar imagem</button></span>
             <span class="col-6 text-left"><button onclick="excluirImg()" class="btn btn_campExcluir"><i class="fas fa-trash"></i>Excluir imagem</button></span>
         </div>
     </div>`;
@@ -47,6 +47,50 @@ function loadImgs()
         divCarInd.innerHTML = textoInd;
         divCarImgs.innerHTML = textoImg;
     };
+}
+
+// ----------------------------------------------------------------------------------------------------------------------------------- //
+
+function addImg()
+{
+    let allAreFilled = true;
+
+    document.getElementById("form_addImg").querySelectorAll("[required]").forEach(function(i) 
+    {
+        if(!allAreFilled) return;
+        if(!i.value) allAreFilled = false;
+    })
+
+    if(allAreFilled) 
+    {
+        event.preventDefault();
+
+        let add_altInput = document.getElementById('addImg_alt'),
+            add_fileInput = document.getElementById('addImg_file');
+        
+        let file_path = add_fileInput.files[0];
+        let fr = new FileReader(), imgResult;
+
+        fr.onloadend = function() 
+        { 
+            imgResult = fr.result; 
+
+            let newImg = 
+            {
+                "href": imgResult,
+                "alt": add_altInput.value,
+            };
+
+            imgs.push(newImg);
+            localStorage.setItem("img_carrossel", JSON.stringify(imgs));
+
+            loadImgs();
+
+            $('#addImgModal').modal('hide');
+        }
+
+        fr.readAsDataURL(file_path);
+    }
 }
 
 // ----------------------------------------------------------------------------------------------------------------------------------- //

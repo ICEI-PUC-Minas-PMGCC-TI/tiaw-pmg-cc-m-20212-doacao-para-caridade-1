@@ -33,7 +33,7 @@
             <label for="check" class="checkbtn">
                 <i class="fa fa-bars"></i>
             </label>
-            <label class="header_logo"><img src="assets/images/logo.png" alt="Logo"><span class="header_logoText">Quem necessita?</span></label>
+            <label class="header_logo"><img src="assets/images/logo.png" alt="Logo" width="50" height="50"><span class="header_logoText">Quem necessita?</span></label>
             <ul>
                 <li><a href="/"><i class="fas fa-home"></i>Página inicial</a></li>
                 <li><a href="/#Instituições"><i class="far fa-smile-wink"></i>Instituições</a></li>
@@ -59,10 +59,21 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form>
+                        <form id="form_editInfo">
                             <div class="form-row">
                                 <div class="col-md-12 mb-3">
                                     <input type="text" class="form-control" id="edit_name" placeholder="Nome da instituição" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-12 mb-3">
+                                    <label for="edit_logo">Logo <small>(Recomendado: 500x500)</small></label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend2"><i class="far fa-image"></i></span>
+                                        </div>
+                                        <input type="file" class="form-control" id="edit_logo" placeholder="Logo" aria-describedby="inputGroupPrepend2">
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-row">
@@ -132,14 +143,76 @@
                             <div class="form-row">
                                 <div class="col-md-12 mb-3">
                                     <label for="edit_descricao">Descrição da instituição</label>
-                                    <input type="text" class="form-control input-lg" id="edit_descricao" aria-describedby="inputGroupPrepend2" required>
+                                    <textarea class="form-control" id="edit_descricao" rows="3"></textarea>
                                 </div>
                             </div>
-                            
-                            <button id="btn_editar" class="btn btn_green" type="submit" onclick="saveUserInfo()">Salvar alterações</button>
+                    
+                            <button class="btn btn_green" type="submit" onclick="saveUserInfo()">Salvar alterações</button>
                         </form>
                     </div>
 
+                </div>
+            </div>
+        </div>
+
+        <!------------------------------------------------------------------->
+
+        <div class="modal fade" id="newNewModal" tabindex="-1" role="dialog" aria-labelledby="newNewModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="newNewModalLabel">Nova notícia</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Adicionar notícia">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="form_addNewNew">
+                            <div class="form-group">
+                                <label for="newNew_img">Imagem <small>(Recomendado: 1000x600)</small></label>
+                                <input type="file" class="form-control" id="newNew_img" aria-describedby="inputGroupPrepend2" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="newNew_title" placeholder="Título da notícia" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="newNew_caption">Texto da notícia</label>
+                                <textarea class="form-control" id="newNew_caption" rows="5" required></textarea>
+                            </div>
+                            <button class="btn btn_green" type="submit" onclick="addNewNew()">Adicionar notícia</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------------------------------------------------->
+
+        <div class="modal fade" id="editNewModal" tabindex="-1" role="dialog" aria-labelledby="editNewModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="editNewModalLabel">Editar notícia</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Adicionar notícia">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="form_editNew">
+                            <div class="form-group">
+                                <label for="editNew_img">Imagem <small>(Recomendado: 1000x600)</small></label>
+                                <input type="file" class="form-control" id="editNew_img" aria-describedby="inputGroupPrepend2">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="editNew_title" placeholder="Título da notícia" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="editNew_caption">Texto da notícia</label>
+                                <textarea class="form-control" id="editNew_caption" rows="5" required></textarea>
+                            </div>
+                            <button class="btn btn_green" type="submit" onclick="editNew()">Salvar alterações</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -171,44 +244,8 @@
         <!------------------------------------------------------------------->
 
         <section class="sec_blog">
-            <div class="-fluid">
-                <div class="blog_noticia row">
-                    <div class="blog_noticiaImg col-12 col-xl-4 text-center align-self-center"><img src="https://picsum.photos/500/300" alt="Notícia imagem"></div>
-                    <div class="blog_noticiaCorpo col-12 col-xl-8">
-                        <div class="blog_noticiaTitulo justify-content-center">Título da notícia
-                            <div class="blog_noticiaData text-center d-flex">Postado em 30/10/2021 às 16:56</div>
-                        </div>
-                        <div class="blog_noticiaDescricao">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit mollitia animi enim? Sint, delectus. Non voluptate hic expedita harum eligendi magni, vitae quasi veritatis velit dignissimos aliquid nam cupiditate? Ab incidunt
-                                accusantium impedit dolor consequuntur dolorum nostrum quia dolore itaque sit quis voluptas laborum cum et sint saepe, provident consectetur. Mollitia, totam reprehenderit molestias dolor quas repellendus repudiandae cumque
-                                facere illo dignissimos ipsa suscipit odit quo similique autem voluptatem inventore minima. In ratione, sunt enim facere corrupti officia, repudiandae nemo id laudantium reprehenderit adipisci ullam saepe laborum est aperiam
-                                accusantium quidem, ipsa quasi. Modi ex odit nisi debitis obcaecati quod!</p>
-                        </div>
-                        <div>
-                            <button class="blog_ntc_editar btn" href="#"><i class="fas fa-cogs"></i>Editar</button>
-                            <button class="blog_ntc_excluir btn" href="#"><i class="far fa-newspaper"></i>Excluir</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="blog_noticia row">
-                    <div class="blog_noticiaImg col-12 col-xl-4 text-center align-self-center"><img src="https://picsum.photos/500/300" alt="Notícia imagem"></div>
-                    <div class="blog_noticiaCorpo col-12 col-xl-8">
-                        <div class="blog_noticiaTitulo justify-content-center">Título da notícia
-                            <div class="blog_noticiaData text-center d-flex">Postado em 30/10/2021 às 16:56</div>
-                        </div>
-                        <div class="blog_noticiaDescricao">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit mollitia animi enim? Sint, delectus. Non voluptate hic expedita harum eligendi magni, vitae quasi veritatis velit dignissimos aliquid nam cupiditate? Ab incidunt
-                                accusantium impedit dolor consequuntur dolorum nostrum quia dolore itaque sit quis voluptas laborum cum et sint saepe, provident consectetur. Mollitia, totam reprehenderit molestias dolor quas repellendus repudiandae cumque
-                                facere illo dignissimos ipsa suscipit odit quo similique autem voluptatem inventore minima. In ratione, sunt enim facere corrupti officia, repudiandae nemo id laudantium reprehenderit adipisci ullam saepe laborum est aperiam
-                                accusantium quidem, ipsa quasi. Modi ex odit nisi debitis obcaecati quod!</p>
-                        </div>
-                        <div>
-                            <button class="blog_ntc_editar btn" href="#"><i class="fas fa-cogs"></i>Editar</button>
-                            <button class="blog_ntc_excluir btn" href="#"><i class="far fa-newspaper"></i>Excluir</button>
-                        </div>
-                    </div>
-                </div>
+            <div id="div_News" class="container-fluid">
+                
             </div>
         </section>
 
