@@ -29,6 +29,17 @@ a:hover {
     box-shadow: none;
 }
 
+.btn_green { 
+    background-color: #21D19F; 
+    color: white;
+    font-weight: bold;
+}
+
+.btn_green:hover {
+    background-color: inherit;
+    color: #21D19F;
+    border-color: #21D19F;
+}
 
 /*-------------------------------------------- Header --------------------------------------------*/
 
