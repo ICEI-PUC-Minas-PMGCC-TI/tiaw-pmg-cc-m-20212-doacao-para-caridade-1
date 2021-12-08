@@ -6,4 +6,4 @@
 >
 >PRESS, Oxford University. Oxford Languages. Disponível em: <https://languages.oup.com/>.
 >
-> Acesso em: 28 set. 2021.
+> Acesso em: 28 set. 2021
