@@ -29,7 +29,7 @@ A solução implementada conta com os seguintes módulos:
 
 # Funcionalidades do sistema
 
-Nesta seção são apresentadas as telas desenvolvidas para cada uma das estruturas de dados do sistema. O respectivo endereço (URL) e outras orientações de acesso são apresentadas na sequência.
+Nesta seção são apresentadas as telas desenvolvidas para cada uma das estruturas de dados do sistema. A descrição, além de autores e detalhes técnicos estão apresentados em cada funcionalidade.
 
 <br>
 
@@ -69,7 +69,7 @@ img_carrossel:
 <br>
 
 ## Carrossel de instituições
-![Carrossel de imagens](../Artefatos/imp_carrosselInst.jpg)
+![Carrossel de instituições](../Artefatos/imp_carrosselInst.jpg)
 
 **Aluna responsável (Cadastro de instituições):** Julia Veloso Dias
 
@@ -116,19 +116,15 @@ instituicoes:
 <br>
 
 ## Página de instituição
-![Carrossel de imagens](../Artefatos/imp_inst.png)
+![Página de instituição](../Artefatos/imp_instData.png)
 
 **Aluno responsável (Edição de informações):** Erick Gonzaga Santos
 
 **Aluna responsável (Visualização de informações):** Julia Veloso Dias
 
-**Aluna responsável (Criação, edição e exclusão de notícias):** Larissa Valadares Silqueira
+**Descrição:** Página designada para visualizar detalhes ampliados de instituições cadastradas previamente, como endereço em visualização dinâmica, categoria, telefone, descrição e logo, além de permitir eidtar essas informações se o usuário logado for o dono da instituição.
 
-**Aluna responsável (Visualização de notícias):** Larissa Valadares Silqueira
-
-**Descrição:** Página designada para visualizar detalhes ampliados de instituições cadastradas previamente, como endereço em visualização dinâmica, categoria, telefone, descrição e logo, além de permitir ao usuário, se estiver logado e for o dono da instituição, adicionar, editar e remover notícias.
-
-**Requisito(s) atendido(s):** RF-02, RF-05, RF-08, RF-09
+**Requisito(s) atendido(s):** RF-02, RF-08, RF-09
 
 * **Artefatos da funcionalidade:**
   * instituicao.html
@@ -162,7 +158,30 @@ instituicoes:
         descricao: 'Descrição sobre a instituição',
     },
 ];
+```
 
+<br>
+
+## Notícias da instituição
+![Notícias da instituição](../Artefatos/imp_blog.png)
+
+**Aluna responsável (Criação, edição e exclusão de notícias):** Larissa Valadares Silqueira
+
+**Aluna responsável (Visualização de notícias):** Larissa Valadares Silqueira
+
+**Descrição:** Seção designada para visualizar, adicionar, editar e remover notícias sobre a instituição caso o usuário logado seja o dono da instituição.
+
+**Requisito(s) atendido(s):** RF-05, RF-08
+
+* **Artefatos da funcionalidade:**
+  * instituicao.html
+  * styles.css
+  * main.js
+  * instituicao.js
+
+**Estrutura de dados:**
+
+```json
 inst_news:
 [
     [
@@ -199,7 +218,7 @@ inst_news:
 <br>
 
 ## Página de login
-![Carrossel de imagens](../Artefatos/imp_login.jpg)
+![Página de login](../Artefatos/imp_login.jpg)
 
 **Aluna responsável (Cadastro de instituições):** Julia Veloso Dias
 
