@@ -1,35 +1,123 @@
-# Avaliação da Aplicação
+# Avaliação da aplicação
 
-<span style="color:red">Pré-requisitos: <a href="6-Implementação.md"> Projeto da Solução</a></span>
+## Plano de testes
 
+As tabelas a seguir apresentam os testes funcionais realizados na aplicação web.
 
-> Apresente os cenários de testes utilizados na realização dos testes da
-> sua aplicação. Escolha cenários de testes que demonstrem os requisitos
-> sendo satisfeitos.
+## CT-01
+|||
+|--|----------|
+|Caso de teste|CT-01: Visualizar imagens do carrossel de campanhas
+|Requisitos associados|RF-01
+|Objetivo do teste|Verificar se o carregamento das imagens está ocorrendo normalmente
+|Passos|1) Acessar o navegador<br>2) Informar a URL do site<br>3) Visualizar a página principal<br>4) Verificar o processo de carregamento
+|Critérios de êxito|Imagens carregadas com sucesso e carrossel funcional
 
-## Plano de Testes
+<br>
 
-> Enumere quais cenários de testes foram selecionados para teste. Neste
-> tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo
-> de usuários que foi escolhido para participar do teste e as
-> ferramentas utilizadas.
-> 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
+## CT-02
+|||
+|--|----------|
+|Caso de teste|CT-02: Visualizar instituições do carrossel de instituições
+|Requisitos associados|RF-03, RF-07
+|Objetivo do teste|Verificar se o carregamento das instituições está ocorrendo normalmente
+|Passos|1) Acessar o navegador<br>2) Informar a URL do site<br>3) Visualizar a página principal<br>4) Verificar o processo de carregamento
+|Critérios de êxito|Instituições carregadas com sucesso e carrossel funcional
+
+<br>
+
+## CT-03
+|||
+|--|----------|
+|Caso de teste|CT-03: Verificar se botão "Saiba mais" funciona corretamente
+|Requisitos associados|RF-03
+|Objetivo do teste|Verificar se o set do ID da instituição está ocorrendo normalmente
+|Passos|1) Acessar o navegador<br>2) Informar a URL do site<br>3) Visualizar a página principal<br>4) Clicar em saiba mais<br>5) Verificar se o ID está sendo salvo no sessionStorage
+|Critérios de êxito|Informações da instituição em questão carregadas corretamente em nova página
+
+<br>
+
+## CT-04
+|||
+|--|----------|
+|Caso de teste|CT-04: Verificar se as notícias da instituição estão sendo carregadas
+|Requisitos associados|RF-05, RF-08
+|Objetivo do teste|Verificar se as notícias estão sendo carregadas do localStorage normalmente
+|Passos|1) Acessar o navegador<br>2) Informar a URL do site<br>3) Visualizar a página de uma instituição<br>4) Verificar se as notícias estão carregadas de acordo com o localStorage
+|Critérios de êxito|Dados das notícias da instituição em questão carregados e exibidos com sucesso
+
+<br>
+
+## CT-05
+|||
+|--|----------|
+|Caso de teste|CT-05: Verificar se login e registro estão ocorrendo normalmente
+|Requisitos associados|-
+|Objetivo do teste|Verificar se as funcionalidades de login e registro estão ocorrendo normalmente
+|Passos|1) Acessar o navegador<br>2) Informar a URL do site<br>3) Visualizar a página de login<br>4) Logar com alguma instituição existente ou registrar uam nova
+|Critérios de êxito|Usuário logado com sucesso
+
+<br>
+
+## CT-06
+|||
+|--|----------|
+|Caso de teste|CT-06: Verificar se é possível registrar usuários já existentes
+|Requisitos associados|-
+|Objetivo do teste|Verificar se a condição de usuário já existente funciona de acordo com os criados no localStorage
+|Passos|1) Acessar o navegador<br>2) Informar a URL do site<br>3) Visualizar a página de login<br>4) Tentar registrar um usuário já registrado no localStorage
+|Critérios de êxito|Usuário registrado com sucesso
+
+<br>
+
+## CT-07
+|||
+|--|----------|
+|Caso de teste|CT-07: Sistema de carrossel de campanhas
+|Requisitos associados|RF-01
+|Objetivo do teste|Verificar se o sistema de adição e exclusão de imagens está fluindo normalmente
+|Passos|1) Acessar o navegador<br>2) Informar a URL do site<br>3) Visualizar a página principal<br>4) Logar com uma conta registrada<br>5) Testar as funcionalidades de adição e exclusão de imagem|Sucesso na operação
+
+<br>
+
+## CT-08
+|||
+|--|----------|
+|Caso de teste|CT-08: Verificar se é possível excluir todas as imagens do carrossel de campanhas
+|Requisitos associados|RF-01
+|Objetivo do teste|Verificar se o sistema permite excluir todas as iamgens do carrossel de campanhas
+|Passos|1) Acessar o navegador<br>2) Informar a URL do site<br>3) Visualizar a página principal<br>4) Logar com uma conta registrada<br>5) Tentar excluir todas as imagens
+|Critérios de êxito|Restar somente uma, não possibilitando a exclusão
+
+<br>
+
+## CT-09
+|||
+|--|----------|
+|Caso de teste|CT-09: Sistema de notícias
+|Requisitos associados|RF-05, RF-08
+|Objetivo do teste|Verificar se o sistema de notícias está fluindo normalmente (criar, editar e excluir)
+|Passos|1) Acessar o navegador<br>2) Informar a URL do site<br>3) Logar com um usuário específico<br>4) Visitar a página da instituição logada<br>5) Testar as funcionalidades de adição, edição e exclusão de notícias
+|Critérios de êxito|Sucesso da operação
+
+<br>
+
+## CT-10
+|||
+|--|----------|
+|Caso de teste|CT-10: Editar informações de instituição
+|Requisitos associados|RF-02, RF-08, RF-09
+|Objetivo do teste|Verificar se a edição de informações está fluindo normalmente
+|Passos|1) Acessar o navegador<br>2) Informar a URL do site<br>3) Logar com um usuário específico<br>4) Visitar a página da instituição logada<br>5) Testar as funcionalidades de edição de informações
+|Critérios de êxito|Atualização das informações editadas
+<br>
 
 ## Ferramentas de Testes (Opcional)
 
-> Comente sobre as ferramentas de testes utilizadas.
-> 
-> **Links Úteis**:
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+Para realização dos testes foram utilizadas as próprias ferramentas do navegador disponíveis através da tecla F12, como o console, e a visualização do localStorage e sessionStorage.
+
+<br>
 
 ## Avaliação
 
-> Discorra sobre os resultados do teste. Ressaltando pontos fortes e
-> fracos identificados na solução. Comente como o grupo pretende atacar
-> esses pontos nas próximas iterações. Apresente as falhas detectadas e
-> as melhorias geradas a partir dos resultados obtidos nos testes.
+Os testes foram bem sucedidos, todas as potenciais brechas foram corrigidas e, com as otimizações aplicadas, o código se comporta com a fluidez desejada pelo grupo. Nenhuma mudança ou atenção futura será necessária para as funcionalidades já prontas.
